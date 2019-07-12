@@ -48,9 +48,9 @@ class Song
 
   def self.new_from_filename(file_name)
 
-    x = file_name.split(" - ") # Creates a new array
-    artist_name = x[0]
-    song_name = x[1].gsub(".mp3", "")
+    x = file_name.split(" - ") # Creates a new array, splitting "Taylor Swift - Blank Space.mp3" at the " - "
+    artist_name = x[0] # Assigns "Taylor Swift" as the artist name
+    song_name = x[1].gsub(".mp3", "") # Assigns "Blank Space" as the song name and replaces .mp3 with am empty string, which removes it.
 
     song = self.create
     song.name = song_name
