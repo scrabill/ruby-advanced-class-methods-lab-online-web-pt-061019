@@ -86,7 +86,7 @@ class Song
     song.save
   end
 
-  def self.destroy_all
+  def destroy_all
   end
 
 end
