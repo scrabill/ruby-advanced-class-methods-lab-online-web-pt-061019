@@ -57,16 +57,6 @@ class Song
     song.name = song_name
     song.artist_name = artist_name
 
-    # My original
-    # x = file_name.split(" - ") # Creates a new array
-    # song_name = x[1].gsub(".mp3","")
-    #
-    # artist_name = x[0]
-    #
-    # song = self.create
-    # song.name = song_name
-    # song.artist_name = artist_name
-
     ## From Lantz
     # def self.create_from_filename(filename)
     #   data = filename.split(" - ")
@@ -77,6 +67,18 @@ class Song
     #   song.artist_name = artist_name
     #   song
     #  end
+
+    # My original
+    # x = file_name.split(" - ") # Creates a new array
+    # song_name = x[1].gsub(".mp3","")
+    #
+    # artist_name = x[0]
+    #
+    # song = self.create
+    # song.name = song_name
+    # song.artist_name = artist_name
+
+
 
     # Taylor Swift - Blank Space.mp3
   end
