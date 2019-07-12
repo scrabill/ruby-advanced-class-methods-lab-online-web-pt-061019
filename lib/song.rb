@@ -77,12 +77,10 @@ class Song
     # song = self.create
     # song.name = song_name
     # song.artist_name = artist_name
-
+  end
 
 
     # Taylor Swift - Blank Space.mp3
-  end
-
   def self.create_from_filename(file_name)
     song = self.new_from_filename(file_name)
     song.save
